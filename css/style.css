@@ -1,0 +1,7 @@
+:root{
+    --fondoCards: rgb(102, 83, 122);
+}
+
+.gradient-custom {
+    background: linear-gradient(to right, #181818, #415372)
+}

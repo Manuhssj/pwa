@@ -3,7 +3,7 @@
     "short_name": "PWA",
     "description": "PrimerPWA",
     "background_color": "aliceblue",
-    "theme_color": "red",
+    "theme_color": "white",
     "orientation": "portrait",
     "display": "standalone",
     "start_url": "./?utm_source=web_app_manifest",

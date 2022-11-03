@@ -14,7 +14,10 @@ const CACHE_NAME='v1_prueba_pwa',urlsToCache = [
     './img/icon_64.png',
     './img/icon_32.png',
     './img/icon_16.png',
-    './img/ios_96.jpg'   
+    './img/ios_96.jpg',
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css'
+
 
 ]
 

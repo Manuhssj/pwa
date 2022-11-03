@@ -13,7 +13,8 @@ const CACHE_NAME='v1_prueba_pwa',urlsToCache = [
     './img/icon_96.png',
     './img/icon_64.png',
     './img/icon_32.png',
-    './img/icon_16.png'    
+    './img/icon_16.png',
+    './img/ios_96.jpg'   
 
 ]
 
@@ -64,4 +65,5 @@ self.addEventListener('fetch', e => {
         return fetch(e.request)
       })
   )
+  // console.log(e);
 })

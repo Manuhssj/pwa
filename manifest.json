@@ -2,7 +2,7 @@
     "name": "PWA",
     "short_name": "PWA",
     "description": "PrimerPWA",
-    "background_color": "#2B2B2B",
+    "background_color": "#7474740e",
     "theme_color": "#F0DB4F",
     "orientation": "portrait",
     "display": "standalone",

@@ -1,7 +1,11 @@
 :root{
-    --fondoCards: rgb(102, 83, 122);
+    --fondoCards: #66537a;
 }
 
 .gradient-custom {
     background: linear-gradient(to right, #181818, #415372)
+}
+
+.navBack{
+    background-color: var(--fondoCards);
 }

@@ -9,3 +9,10 @@
 .navBack{
     background-color: var(--fondoCards);
 }
+
+.footer {
+    bottom: 0;
+    padding: 20px calc(1.5rem * 0.5);
+    width: 100%;
+    background-color: var(--fondoCards);
+  }

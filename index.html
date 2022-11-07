@@ -29,25 +29,25 @@
                     <div class="mb-2">
                       <img src="img/icon_96.png" class="rounded mx-auto d-block" alt="LOGO MH">
                     </div>
-                    <form method="POST" action="productos/index.html">
+                    <form method="POST" action="./productos/index.html">
                       <h3 class="text-dark mb-2 text-uppercase">Iniciar sesión</h3>
                       
                       <p class="text-dark mb-4">Ingresa tu correo y contraseña para ingresar</p>
                       
                       <div class="form-outline form-white mb-4">
-                        <input type="email" id="typeEmailX" class="form-control " placeholder="example@example.com" />
+                        <input type="email" id="typeEmailX" class="form-control " placeholder="example@example.com"  name="email"/>
                         <label class="form-label text-dark" for="typeEmailX">Email</label>
                       </div>
                       
                       <div class="form-outline form-white mb-4">
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" id="password" placeholder="********" aria-label="Recipient's username" aria-describedby="button-addon2">
-                          <button class="btn btn-outline-secondary" type="button" id="password"><i class="fa-sharp fa-solid fa-eye"></i></button>
+                          <input type="password" class="form-control" id="password" placeholder="********" aria-label="Recipient's username" aria-describedby="button-addon2" name="password">
+                          <button class="btn btn-outline-secondary" type="button" onclick="mostrarContrasena()"><i class="fa-sharp fa-solid fa-eye"></i></button>
                         </div>
                         <label class="form-label text-dark" for="typePasswordX">Contraseña</label>
                       </div>
         
-                      <button class="btn btn-outline-dark px-4" type="submit">Iniciar sesión</button>
+                      <button class="btn btn-outline-dark px-4" type="submit" onclick="sesion()">Iniciar sesión</button>
                     </form>
                   </div>
                 

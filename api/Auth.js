@@ -7,18 +7,16 @@ function mostrarContrasena(){
     }
 }
 
-
-
-
 const myForm = document.getElementById('myForm');
-
 myForm.addEventListener('submit', function(e){
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
     e.preventDefault();
 
     var formdata = new FormData();
-    formdata.append("email", "dioc_19@alu.uabcs.mx");
-    formdata.append("password", "K8^i2Zu43g%IVv");
+    formdata.append("email", email);
+    formdata.append("password", password);
     
     var requestOptions = {
       method: 'POST',
@@ -27,9 +25,16 @@ myForm.addEventListener('submit', function(e){
     };
     
     fetch("https://crud.jonathansoto.mx/api/login", requestOptions)
-      .then(response => response.text())
-      .then(result => console.log(result))
+      .then(response => response.json())
+      .then(result => {
+        const {code} = result
+        if(code === 2){
+          window.location.href="../productos/index.html";
+        }else{
+          alert("El email o contraseña son incorrectas")
+        }
+      })
       .catch(error => console.log('error', error));
+    
 
-     
 });

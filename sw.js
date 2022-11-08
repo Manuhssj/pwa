@@ -2,10 +2,9 @@
 //Asignar un nombre y version al cache
 const CACHE_NAME='v1_prueba_pwa',urlsToCache = [
     './',
-    './productos',
-    './productos/index.html',
+    './api/Auth.js',
     './css/style.css',
-    './js/app.js',
+    './productos/index.html',
     './img/icon_1024.png',
     './img/icon_512.png',
     './img/icon_384.png',
@@ -16,10 +15,14 @@ const CACHE_NAME='v1_prueba_pwa',urlsToCache = [
     './img/icon_64.png',
     './img/icon_32.png',
     './img/icon_16.png',
-    './img/ios_96.jpg'
+    './img/ios_96.jpg',
+    './index.html',
+    './.jshintrc',
+    './sw.js',
+    './swRegister.js',
 ]
 
-//durante la fase de instalación, generalmente se almacena en caché los activos estáticos
+//Durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_NAME)

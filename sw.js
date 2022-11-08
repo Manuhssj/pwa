@@ -73,6 +73,6 @@ self.addEventListener('fetch', e => {
   )
 })
 
-if (navigator.onLine) {
+if (!navigator.onLine) {
   alert("NO HAY CONSEXION A INTERNET")
 }

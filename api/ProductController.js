@@ -43,6 +43,7 @@ const mostrarDatos = (data) =>{
     }
 }
 
-// const agregarAlCarrito = (idProd) => {
-//     const item = stockProductos.find(prod) => prod.id === prod.id)
-// }
+const agregarAlCarrito = (prodId) => {
+    // const item = stockProductos.find((prod) => data.id === prod.id)
+}
+console.log(data);

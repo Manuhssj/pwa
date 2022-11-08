@@ -28,6 +28,7 @@ myForm.addEventListener('submit', function(e){
       .then(response => response.json())
       .then(result => {
         const {code} = result
+        console.log(result.data);
         if(code === 2){
           window.location.href="../productos/index.html";
         }else{
@@ -38,3 +39,5 @@ myForm.addEventListener('submit', function(e){
     
 
 });
+
+

@@ -4,9 +4,9 @@
     "description": "PrimerPWA",
     "background_color": "aliceblue",
     "theme_color": "white",
-    "orientation": "portrait",
+    "orientation": "portrait-primary",
     "display": "standalone",
-    "start_url": "./?utm_source=web_app_manifest",
+    "start_url": "./index.html",
     "scope": "./",
     "lang": "es-MX",
     "icons": [

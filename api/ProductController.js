@@ -1,6 +1,6 @@
-
-
+var carrito = [];
 let local = JSON.parse(localStorage.getItem("token"));
+
 
 let myHeaders = new Headers();
 myHeaders.append("Authorization", `Bearer ${local.data.token}`);
@@ -15,7 +15,7 @@ fetch("https://crud.jonathansoto.mx/api/products", requestOptions)
     .catch(error => console.log('error', error));
 
 const mostrarDatos = (data) =>{
-    console.log(data);
+    
     let body = ''
     for (let i = 0; i < data.length; i++) {
         body += `<div class="m-3">
@@ -38,5 +38,11 @@ const mostrarDatos = (data) =>{
                         </div>`
                         
         document.getElementById("cards").innerHTML=body;
+
+        
     }
 }
+
+// const agregarAlCarrito = (idProd) => {
+//     const item = stockProductos.find(prod) => prod.id === prod.id)
+// }

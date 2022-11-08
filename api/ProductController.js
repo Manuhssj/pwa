@@ -28,8 +28,8 @@ const mostrarDatos = (data) =>{
                                             <p class="card-text">${data[i].description}</p> 
                                         </div>
                                         <div class="card-footer">
-                                            <button class="btn btn-info col-12">
-                                                Ver mas
+                                            <button class="btn btn-warning col-12">
+                                                Carrito
                                             </button>
                                         </div>
                                     </div>
@@ -43,7 +43,7 @@ const mostrarDatos = (data) =>{
     }
 }
 
-const agregarAlCarrito = (prodId) => {
-    // const item = stockProductos.find((prod) => data.id === prod.id)
-}
-console.log(data);
+// const agregarAlCarrito = (prodId) => {
+//     // const item = stockProductos.find((prod) => data.id === prod.id)
+// }
+// console.log(data);

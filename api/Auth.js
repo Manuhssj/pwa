@@ -28,8 +28,8 @@ myForm.addEventListener('submit', function(e){
       .then(response => response.json())
       .then(result => {
         const {code} = result
-        console.log(result.data);
         if(code === 2){
+          localStorage.setItem("token", JSON.stringify( result ) )
           window.location.href="../productos/index.html";
         }else{
           alert("El email o contraseña son incorrectas")

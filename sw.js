@@ -1,7 +1,27 @@
 const staticCacheName = 'site-static-v2';
+const dynamicCache = 'site-dynamic-v1';
 const  assets = [
+    '/',
+    '/index.html',
     '/css/style.css',
     '/fallback/fallback.html',
+    '/img/icons/icon_16.png',
+    '/img/icons/icon_32.png',
+    '/img/icons/icon_64.png',
+    '/img/icons/icon_72.png',
+    '/img/icons/icon_96.png',
+    '/img/icons/icon_128.png',
+    '/img/icons/icon_192.png',
+    '/img/icons/icon_192.png',
+    '/img/icons/icon_256.png',
+    '/img/icons/icon_384.png',
+    '/img/icons/icon_512.png',
+    '/img/icons/icon_1024.png',
+    '/img/icons/ios_96.png',
+    '/js/app.js',
+    '/manifest.json',
+    
+
 ];
 
 
@@ -35,12 +55,12 @@ self.addEventListener('fetch', event => {
     // console.log('Fetch evento',event);
     event.respondWith(
         caches.match(event.request).then(cacheRes => {
-                return cacheRes || fetch(event.request).then(fetchRes =>{
-                    return caches.open(dynamicCacheName).then(cache => {
-                        cache.put(event.request.url, fetchRes.clone());
-                        return fetchRes;
-                    })
+            return cacheRes || fetch(event.request).then(fetchRes =>{
+                return caches.open(dynamicCacheName).then(cache => {
+                    cache.put(event.request.url, fetchRes.clone());
+                    return fetchRes;
                 })
-            }).catch(() => caches.match('/fallback/fallback.html'))
+            })
+        }).catch(() => caches.match('/fallback/fallback.html'))
     )
 })

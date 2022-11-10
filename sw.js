@@ -50,6 +50,6 @@ self.addEventListener('fetch', event => {
                     return fetchRes;
                 })
             })
-        }).catch(() => caches.match('/fallback/fallback.html'))
+        }).catch(() => caches.match('/index.html'))
     )
 })

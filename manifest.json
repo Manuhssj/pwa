@@ -49,11 +49,6 @@
 
         },
         {
-            "src":"./img/icons/icon_96.png",
-            "sizes":"96x96",
-            "type":"image/png"
-        },
-        {
             "src":"./img/icons/icon_64.png",
             "sizes":"64x64",
             "type":"image/png"

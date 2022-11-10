@@ -1,25 +1,14 @@
-const staticCacheName = 'site-static-v2';
-const dynamicCache = 'site-dynamic-v1';
+const staticCacheName = 'site-static-v1';
+const dynamicCacheName = 'site-dynamic-v1';
 const  assets = [
-    '/',
     '/index.html',
     '/css/style.css',
-    '/fallback/fallback.html',
-    '/img/icons/icon_16.png',
-    '/img/icons/icon_32.png',
-    '/img/icons/icon_64.png',
-    '/img/icons/icon_72.png',
-    '/img/icons/icon_96.png',
-    '/img/icons/icon_128.png',
-    '/img/icons/icon_192.png',
-    '/img/icons/icon_192.png',
-    '/img/icons/icon_256.png',
-    '/img/icons/icon_384.png',
-    '/img/icons/icon_512.png',
-    '/img/icons/icon_1024.png',
-    '/img/icons/ios_96.png',
     '/js/app.js',
     '/manifest.json',
+    'https://kit.fontawesome.com/617fbafb99.js',
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css'
+
     
 
 ];
@@ -42,7 +31,7 @@ self.addEventListener('activate', event => {
         caches.keys().then(keys => {
             // console.log(keys);
             return Promise.all(keys
-                .filter(key => key !== staticCacheName)
+                .filter(key => key !== staticCacheName && key !== dynamicCacheName)
                 .map(key => caches.delete(key))
             )
         })

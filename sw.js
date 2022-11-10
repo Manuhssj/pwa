@@ -1,5 +1,6 @@
 const staticCacheName = 'site-static-v2';
 const  assets = [
+    '/css/style.css',
     '/fallback/fallback.html',
 ];
 

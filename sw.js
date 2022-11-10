@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v1';
-const dynamicCacheName = 'site-dynamic-v1';
+const staticCacheName = 'site-static';
+const dynamicCacheName = 'site-dynamic';
 const  assets = [
     '/index.html',
     '/css/style.css',
@@ -16,7 +16,7 @@ const  assets = [
 
 // Instalacion del service worker
 self.addEventListener('install', event => {
-    // console.log('Service worker ha sido instalado');
+    console.log('Service worker ha sido instalado');
     event.waitUntil(caches.open(staticCacheName).then(cache => {
         console.log("cachando");
         cache.addAll(assets); 
@@ -26,7 +26,7 @@ self.addEventListener('install', event => {
 
 // Activacion del service worker
 self.addEventListener('activate', event => {
-    // console.log("Service worker ha sido activado");
+    console.log("Service worker ha sido activado");
     event.waitUntil(
         caches.keys().then(keys => {
             // console.log(keys);

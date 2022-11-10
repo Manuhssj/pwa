@@ -12,7 +12,7 @@ let requestOptions = {
 fetch("https://crud.jonathansoto.mx/api/products", requestOptions)
     .then(response => response.json())
     .then(data => mostrarDatos(data.data))
-    .catch(error => console.log('error',error));
+    .catch(error => console.log(window.location.href="../fallback/fallback.html",error));
 
 const mostrarDatos = (data) =>{
     

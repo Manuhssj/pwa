@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static';
+const staticCacheName = 'site-static-v3';
 const dynamicCacheName = 'site-dynamic';
 const  assets = [
     '/index.html',
@@ -7,9 +7,11 @@ const  assets = [
     '/manifest.json',
     'https://kit.fontawesome.com/617fbafb99.js',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
-    'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css'
-
-    
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css',
+    '/fallback/fallback.html',
+    './img/icons/icon_128.png',
+    '/api/Auth.js',
+    '/api/ProductController.js'
 
 ];
 

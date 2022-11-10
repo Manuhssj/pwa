@@ -35,7 +35,7 @@ myForm.addEventListener('submit', function(e){
           alert("El email o contraseña son incorrectas")
         }
       })
-      .catch(error => console.log('error', error));
+      .catch(error => console.log(window.location.href="../fallback/fallback.html", error));
     
 
 });
